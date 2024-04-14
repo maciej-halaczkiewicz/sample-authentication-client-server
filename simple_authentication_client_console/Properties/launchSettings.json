@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "simple_authentication_client_console": {
+      "commandName": "Project",
+      "commandLineArgs": "http://127.0.0.1:32111"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  simple_authentication_client_migrations:
+    image: ${DOCKER_REGISTRY-}simpleauthenticationclientmigrations
+    build:
+      context: .
+      dockerfile: simple_authentication_client_data_migrations/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=development
+
+  db:
+    build: ./simple_authentication_client_database/scripts
+    ports:
+        - 1433:1433
+
+  simple_authentication_client_api:
+    image: ${DOCKER_REGISTRY-}simpleauthenticationclientapi
+    build:
+      context: .
+      dockerfile: simple_authentication_client_api/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=development
+    ports:
+        - 32111:8080

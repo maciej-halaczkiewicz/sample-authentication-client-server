@@ -1,0 +1,2 @@
+﻿# package manager console:
+add-migration InitialMigration -StartupProject simple_authentication_client_migrations -Project simple_authentication_client_infrastructure

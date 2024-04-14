@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "simple_authentication_client_migrations": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "development"
+      }
+    }
+  }
+}

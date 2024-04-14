@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "simple_authentication_client_console": "StartDebugging",
+        "simple_authentication_client_api": "StartDebugging",
+        "simple_authentication_client_migrations": "StartDebugging",
+      }
+    }
+  }
+}
